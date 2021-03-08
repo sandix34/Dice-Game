@@ -1,9 +1,34 @@
 // variables
 $texte-font: 'Lato', sans-serif;
 
+$icon-add: url(./images/icons/add-circle-outline.svg);
+$icon-reload: url(./images/icons/reload.svg);
+$icon-download: url(./images/icons/ios-download-outline.svg);
+
 // body
 body {
   font-family: $texte-font;
+}
+
+// icons
+.icon {
+  width: 30px;
+  position: relative;
+  top: 5px;
+  cursor: pointer;
+  padding-right: 8px;
+}
+
+.icon-add {
+  content: $icon-add;
+}
+
+.icon-reload {
+  content: $icon-reload;
+}
+
+.icon-download {
+  content: $icon-download;
 }
 
 

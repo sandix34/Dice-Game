@@ -1,3 +1,23 @@
 body {
   font-family: "Lato", sans-serif;
+}
+
+.icon {
+  width: 30px;
+  position: relative;
+  top: 5px;
+  cursor: pointer;
+  padding-right: 8px;
+}
+
+.icon-add {
+  content: url(./images/icons/add-circle-outline.svg);
+}
+
+.icon-reload {
+  content: url(./images/icons/reload.svg);
+}
+
+.icon-download {
+  content: url(./images/icons/ios-download-outline.svg);
 }/*# sourceMappingURL=style.css.map */
