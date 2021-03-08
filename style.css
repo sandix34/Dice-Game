@@ -20,4 +20,9 @@ body {
 
 .icon-download {
   content: url(./images/icons/ios-download-outline.svg);
+}
+
+.dice {
+  max-width: 100px;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */
