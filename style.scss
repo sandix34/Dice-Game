@@ -1,16 +1,31 @@
-// variables
-$texte-font: 'Lato', sans-serif;
+/*
+*****************
+* variables
+*****************
+*/
+$texte-font: "Lato", sans-serif;
 
 $icon-add: url(./images/icons/add-circle-outline.svg);
 $icon-reload: url(./images/icons/reload.svg);
 $icon-download: url(./images/icons/ios-download-outline.svg);
+$circle: url(./images/icons/circle-fill.svg);
 
-// body
+/*
+***********
+* Body
+***********
+*/
 body {
   font-family: $texte-font;
+  background-color: #eee;
+  border: 10px solid #a4733e;
 }
 
-// icons
+/*
+**************
+* Icons
+**************
+*/
 .icon {
   width: 30px;
   position: relative;
@@ -31,9 +46,102 @@ body {
   content: $icon-download;
 }
 
-// dice
-.dice {
-  max-width: 100px;
-  height: auto;
+.button {
+  font-weight: 400;
+  color: gray;
 }
 
+@media (min-width: 576px) {
+  .button {
+    margin: 20px 0 20px 0;
+  }
+}
+
+.action {
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+@media (min-width: 576px) {
+  .action {
+    margin-top: 100px;
+  }
+}
+
+/*
+************
+* Dice
+************
+*/
+.dice {
+  max-width: 80px;
+  height: auto;
+  margin-top: 30px;
+}
+
+@media (min-width: 576px) {
+  .dice {
+    margin-top: 50px;
+  }
+}
+
+/*
+***************
+* Player
+**************
+*/
+.player {
+  font-weight: 300;
+  font-size: large;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+@media (min-width: 576px) {
+  .player {
+    font-size: x-large;
+    margin: 15px 0 0 0;
+  }
+}
+
+#active-player {
+  content: $circle;
+  width: 13px;
+  margin-left: 10px;
+  padding-bottom: 2px;
+}
+
+/*
+************
+* Score
+*************
+*/
+.score {
+  font-weight: 200;
+  font-size: 50px;
+  margin: 0;
+}
+
+.current-score {
+  background-color: red;
+  width: 100px;
+  margin: auto;
+  padding: 10px 0 10px 0;
+}
+
+@media (min-width: 576px) {
+  .current-score {
+    margin-top: 120px;
+  }
+}
+
+.current-text {
+  font-weight: 300;
+  font-size: 10px;
+  margin-top: 0;
+}
+
+.current-number {
+  font-size: 20px;
+  margin: 0;
+}

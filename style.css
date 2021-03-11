@@ -1,7 +1,19 @@
+/*
+***********
+* Body
+***********
+*/
 body {
   font-family: "Lato", sans-serif;
+  background-color: #eee;
+  border: 10px solid #a4733e;
 }
 
+/*
+**************
+* Icons
+**************
+*/
 .icon {
   width: 30px;
   position: relative;
@@ -22,7 +34,102 @@ body {
   content: url(./images/icons/ios-download-outline.svg);
 }
 
+.button {
+  font-weight: 400;
+  color: gray;
+}
+
+@media (min-width: 576px) {
+  .button {
+    margin: 20px 0 20px 0;
+  }
+}
+
+.action {
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+@media (min-width: 576px) {
+  .action {
+    margin-top: 100px;
+  }
+}
+
+/*
+************
+* Dice
+************
+*/
 .dice {
-  max-width: 100px;
+  max-width: 80px;
   height: auto;
-}/*# sourceMappingURL=style.css.map */
+  margin-top: 30px;
+}
+
+@media (min-width: 576px) {
+  .dice {
+    margin-top: 50px;
+  }
+}
+
+/*
+***************
+* Player
+**************
+*/
+.player {
+  font-weight: 300;
+  font-size: large;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+@media (min-width: 576px) {
+  .player {
+    font-size: x-large;
+    margin: 15px 0 0 0;
+  }
+}
+
+#active-player {
+  content: url(./images/icons/circle-fill.svg);
+  width: 13px;
+  margin-left: 10px;
+  padding-bottom: 2px;
+}
+
+/*
+************
+* Score
+*************
+*/
+.score {
+  font-weight: 200;
+  font-size: 50px;
+  margin: 0;
+}
+
+.current-score {
+  background-color: red;
+  width: 100px;
+  margin: auto;
+  padding: 10px 0 10px 0;
+}
+
+@media (min-width: 576px) {
+  .current-score {
+    margin-top: 120px;
+  }
+}
+
+.current-text {
+  font-weight: 300;
+  font-size: 10px;
+  margin-top: 0;
+}
+
+.current-number {
+  font-size: 20px;
+  margin: 0;
+} /*# sourceMappingURL=style.css.map */
