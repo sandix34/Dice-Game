@@ -10,7 +10,7 @@ const roll = document.querySelector("#reload");
 
 
 
-// Render the dice
+// Roll the dice
 const rollDice = function () {
 
   // Create a random number
