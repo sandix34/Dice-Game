@@ -1,3 +1,8 @@
+// variables
+let randomNumber = 0;
+let roundScore = 0;
+
+
 // Get the #dice element
 const dice = document.querySelector("#dice");
 // Get roll button
@@ -6,10 +11,9 @@ const roll = document.querySelector("#reload");
 
 
 // Render the dice
-const renderDice = function () {
+const rollDice = function () {
 
   // Create a random number
-  let randomNumber = 0;
   randomNumber = Math.floor(Math.random() * 6) + 1;
 
   // Display dice
@@ -19,8 +23,19 @@ const renderDice = function () {
     '.png" alt="dice ' +
     randomNumber +
     '">';
+
+  // Round score
+  if(randomNumber != 1) {
+    roundScore += randomNumber;
+    console.log("roundScore" + roundScore);
+  } else {
+    roundScore = 0;
+  }
+  
+  // Display round score
+  document.querySelector('#current-0').textContent = roundScore;
 };
 
 
 // Listen for click events
-roll.addEventListener("click", renderDice, false);
+roll.addEventListener("click", rollDice, false);
