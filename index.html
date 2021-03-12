@@ -45,12 +45,12 @@
         </ion-row>
       </ion-col>
       <ion-col size-sm="2">
-        <ion-row class="ion-justify-content-center">
-          <img class="dice" src="./images/dice/dice-4.png" alt="dice 4">
+        <ion-row id="dice" class="ion-justify-content-center">
+          <!--Render the image of the dice here-->
         </ion-row>
         <div class="action">
           <ion-text class="ion-text-center ion-text-uppercase">
-            <p class="button"><span class="icon icon-reload"></span>roll dice</p>
+            <p id="reload" class="button"><span class="icon icon-reload"></span>roll dice</p>
           </ion-text>
           <ion-text class="ion-text-center ion-text-uppercase">
             <p class="button"><span class="icon icon-download"></span>hold</p>
@@ -79,6 +79,7 @@
       </ion-col>
     </ion-row>
   </ion-grid>
+  <script src="./index.js"></script>
 </body>
 
 </html>
