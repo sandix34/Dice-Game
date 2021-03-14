@@ -51,6 +51,15 @@ body {
   cursor: pointer;
 }
 
+.button:hover {
+  color: black;
+  font-size: larger;
+  transition-property: font-size;
+  transition-duration: 0.3s;
+  transition-delay: 0s;
+  transition-timing-function: ease;
+}
+
 @media (min-width: 576px) {
   .button {
     margin: 20px 0 20px 0;
