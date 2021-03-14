@@ -44,6 +44,15 @@ body {
   cursor: pointer;
 }
 
+.button:hover {
+  color: black;
+  font-size: larger;
+  transition-property: font-size;
+  transition-duration: 0.3s;
+  transition-delay: 0s;
+  transition-timing-function: ease;
+}
+
 @media (min-width: 576px) {
   .button {
     margin: 20px 0 20px 0;
@@ -94,11 +103,16 @@ body {
     margin: 15px 0 0 0;
   }
 }
-#active-player {
+.active-player {
   content: url(./images/icons/circle-fill.svg);
   width: 13px;
   margin-left: 10px;
   padding-bottom: 2px;
+}
+
+.winner-player {
+  font-weight: 700;
+  color: red;
 }
 
 /*
