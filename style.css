@@ -101,6 +101,11 @@ body {
   padding-bottom: 2px;
 }
 
+.winner-player {
+  font-weight: 700;
+  color: red;
+}
+
 /*
 ************
 * Score

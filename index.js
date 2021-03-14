@@ -28,13 +28,13 @@ const rollDice = function () {
     // Display round score
     document.querySelector(`#current-${activePlayer}`).textContent = roundScore;
   } else {
-    roundScore = 0;
     changePlayer();
   }
 };
 
 // Change player
 const changePlayer = function () {
+  roundScore = 0;
   document.querySelector(`#current-${activePlayer}`).textContent = 0;
   activePlayer = activePlayer === 0 ? 1 : 0;
   player0.classList.toggle("active-player");
@@ -43,10 +43,22 @@ const changePlayer = function () {
 
 // Hol the score
 const holdScore = function () {
+
   // add current score
   scores[activePlayer] += roundScore;
-
+  // display score
   document.querySelector(`#score-${activePlayer}`).textContent = scores[activePlayer];
+
+  // check player score
+  if (scores[activePlayer] >= 20) {
+
+    document.querySelector(`.playerName-${activePlayer}`).classList.add('winner-player');
+    document.querySelector(`.playerName-${activePlayer}`).innerHTML = `<p>winner !</p>`;
+  } else {
+
+    // Change player
+    changePlayer();
+  }
 }
 
 // Listen for click events
