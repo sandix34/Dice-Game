@@ -10,6 +10,8 @@ const dice = document.querySelector("#dice");
 const roll = document.querySelector("#reload");
 // Get hold button
 const hold = document.querySelector("#download");
+// Get new game button
+const newGame = document.querySelector("#new-game");
 // Get the players
 const player0 = document.querySelector(".player-0");
 const player1 = document.querySelector(".player-1");
@@ -43,7 +45,6 @@ const changePlayer = function () {
 
 // Hol the score
 const holdScore = function () {
-
   // add current score
   scores[activePlayer] += roundScore;
   // display score
@@ -51,16 +52,20 @@ const holdScore = function () {
 
   // check player score
   if (scores[activePlayer] >= 20) {
-
-    document.querySelector(`.playerName-${activePlayer}`).classList.add('winner-player');
+    document.querySelector(`.playerName-${activePlayer}`).classList.add("winner-player");
     document.querySelector(`.playerName-${activePlayer}`).innerHTML = `<p>winner !</p>`;
   } else {
-
     // Change player
     changePlayer();
   }
-}
+};
+
+// New game
+const replay = function () {
+  document.location.reload();
+};
 
 // Listen for click events
 roll.addEventListener("click", rollDice, false);
 hold.addEventListener("click", holdScore, false);
+newGame.addEventListener("click", replay, false);
