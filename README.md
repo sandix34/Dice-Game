@@ -27,6 +27,6 @@ Le premier joueur qui atteint les 100 points sur global gagne le jeu.
 - [CSS 3](https://developer.mozilla.org/fr/docs/Web/CSS)
 - [Sass](https://sass-lang.com/)
 - [JavaScript](https://developer.mozilla.org/fr/docs/Web/JavaScript)
-- Le framework CSS [ionic](https://ionicframework.com/docs/intro/cdn)
+- Le framework [ionic](https://ionicframework.com/docs/intro/cdn)
 - [google Fonts](https://fonts.google.com/?query=lato)
 - [Nelify](https://www.netlify.com/) pour la mise en ligne.
